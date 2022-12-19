@@ -1,0 +1,74 @@
+header {
+  background-image: linear-gradient(145deg, black, transparent),
+    url('./src/header.jpg');
+  height: 90vh;
+  position: relative;
+  clip-path: ellipse(60% 61% at 50% 34%);
+  background-size: cover;
+}
+.logo {
+  position: relative;
+  top: -30px;
+  left: -50px;
+}
+.logo img {
+  width: 350px;
+  height: 200px;
+}
+.title {
+  text-align: center;
+}
+.text-white {
+  color: white;
+}
+.btn {
+  width: 150px;
+  height: 50px;
+  color: black;
+  border-color: none;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  transition-duration: 100ms;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgb(170, 172, 172);
+}
+.btn-white {
+  background-color: white;
+  opacity: 70%;
+}
+
+.title {
+  top: 150px;
+  position: relative;
+  animation-name: slide-up;
+  animation-duration: 2s, 2s;
+}
+.title h3 {
+  letter-spacing: 14px;
+}
+.title .description {
+  letter-spacing: 10px;
+}
+@-webkit-keyframes slide-up {
+  from {
+    top: 150px;
+    animation-timing-function: ease-out;
+  }
+  25% {
+    top: 50px;
+    animation-timing-function: ease-in;
+  }
+  50% {
+    top: 200px;
+    animation-timing-function: ease-out;
+  }
+  75% {
+    top: 75px;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    top: 150px;
+    animation-timing-function: ease-in;
+  }
+}
